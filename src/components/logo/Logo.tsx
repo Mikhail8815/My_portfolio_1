@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
-c
+
 export const Logo = () => {
     return (
         <a href="">
