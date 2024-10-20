@@ -34,16 +34,12 @@ const SkillTitle = styled.h3`
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #fff;
 
 `
 const SkillText = styled.p`
     text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
 `
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
 position: relative;
     
     &::before {
