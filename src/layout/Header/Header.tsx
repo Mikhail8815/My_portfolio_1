@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 import {HeaderMenu} from "./HeaderMenu/HeaderMenu";
 
 const menuItems = ["Home", "Skills", "Works", "Testimony", "Contact"];
@@ -13,6 +14,7 @@ export const Header = () => {
                 <FlexWrapper justify="space-between" align={"center"}>
                     <Logo/>
                     <HeaderMenu menuItems={menuItems}/>
+                    <MobileMenu menuItems={menuItems}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -21,7 +23,7 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: rgba(31, 31, 31, 0.9);
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     left: 0;
     right: 0;
