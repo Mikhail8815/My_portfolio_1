@@ -8,6 +8,7 @@ import timerImg from "./../../../assets/images/Proj - 2.jpg"
 import {Container} from "../../../components/Container";
 import {S} from "../works/Works_styles"
 import {TabStatusType} from "./TabMenu/TabMenu";
+import {AnimatePresence, motion} from "framer-motion";
 
 // const tabsItems = ["All", "Landing Page", "React", "SPA"]
 
@@ -35,13 +36,43 @@ const worksData = [
         title: "Social Network",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: socialImg,
-        type: "spa"
+        type: "spa",
+        id: 1
     },
     {
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: timerImg,
-        type: "react"
+        type: "react",
+        id: 2
+    },
+    {
+        title: "Social Network",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: socialImg,
+        type: "spa",
+        id: 3
+    },
+    {
+        title: "Timer",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: timerImg,
+        type: "react",
+        id: 4
+    },
+    {
+        title: "Social Network",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: socialImg,
+        type: "spa",
+        id: 5
+    },
+    {
+        title: "Timer",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: timerImg,
+        type: "react",
+        id: 6
     }
 ]
 
@@ -59,19 +90,33 @@ export const Works: React.FC = () => {
         filteredWorks = worksData.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus (value: TabStatusType) {
+    function changeFilterStatus(value: TabStatusType) {
         setCurrentFilterStatus(value)
     }
 
     return (
-        <S.Works>
+        <S.Works id={"works"}>
             <Container>
                 <SectionTitle>MyWorks</SectionTitle>
-                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus} currentFilterStatus={currentFilterStatus}/>
+                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
+                         currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
-                    {filteredWorks.map((work, index) => {
-                        return  <Work title={work.title} text={work.text} src={work.src} key={index} />
-                    })}
+                    <AnimatePresence>
+                        {filteredWorks.map((work, index) => {
+                            return (
+                                <motion.div style={{width: "400px", flexGrow: 1, maxWidth: "540px"}}
+                                    layout={true}
+                                    initial={{opacity: 0}}
+                                    animate={{opacity: 1}}
+                                    exit={{opacity: 0}}
+                                    key={work.id}>
+                                    <Work title={work.title}
+                                          text={work.text}
+                                          src={work.src} key={work.id}/>
+                                </motion.div>
+                            )
+                        })}
+                    </AnimatePresence>
                 </FlexWrapper>
             </Container>
         </S.Works>

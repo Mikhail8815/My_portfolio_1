@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container";
 
 export const Testimony: React.FC = () => {
     return (
-        <StyledTestimony>
+        <StyledTestimony id={"testimony"}>
             <Container>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
@@ -29,4 +29,5 @@ const StyledTestimony = styled.section`
     ${S.IconWrapper} {
         margin: 48px 0 72px;
     }
+    position: relative;
 `

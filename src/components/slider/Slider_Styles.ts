@@ -3,6 +3,7 @@ import {theme} from "../../styles/theme";
 
 const Slider = styled.div`
     max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
