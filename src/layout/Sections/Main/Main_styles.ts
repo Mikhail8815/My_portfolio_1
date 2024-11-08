@@ -7,7 +7,7 @@ const Photo = styled.img`
     height: 430px;
     object-fit: cover;
     margin-right: 15px;
-    
+
     @media ${theme.media.mobile} {
         width: 310px;
         height: 380px;

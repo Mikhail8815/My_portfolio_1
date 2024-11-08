@@ -16,7 +16,7 @@ function App() {
             <Particle />
            <Header />
             <Main />
-            <Skills />
+            {/*<Skills />*/}
             <Works />
             <Testimony />
             <Contact />
