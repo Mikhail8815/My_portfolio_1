@@ -20,8 +20,6 @@ export const GlobalStyle = createGlobalStyle`
         color: ${theme.colors.font};
         line-height: 1.2;
         min-width: 360px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     a {
