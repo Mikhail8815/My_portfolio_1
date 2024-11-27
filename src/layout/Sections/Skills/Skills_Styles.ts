@@ -5,7 +5,7 @@ const Skills = styled.section`
    position: relative;
 `
 const Skill = styled.div`
-    width: 380px;
+    max-width: 360px;
     padding: 42px 20px 52px;
     flex-grow: 1;
     

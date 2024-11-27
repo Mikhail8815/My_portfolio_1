@@ -3,14 +3,14 @@ import {theme} from "../../../styles/theme";
 import {font} from "../../../styles/Common";
 
 const Photo = styled.img`
-    width: 350px;
+    width: 330px;
     height: 430px;
     object-fit: cover;
     margin-right: 15px;
 
     @media ${theme.media.mobile} {
-        width: 310px;
-        height: 380px;
+        width: 260px;
+        height: 330px;
     }
 `
 const Main = styled.section`
@@ -64,8 +64,8 @@ position: relative;
     z-index: 0;
     &::before {
         content: "";
-        width: 360px;
-        height: 470px;
+        width: 330px;
+        height: 440px;
         border: 5px solid ${theme.colors.accent};
         
         position: absolute;
@@ -74,10 +74,10 @@ position: relative;
         z-index: -1;
 
         @media ${theme.media.mobile} {
-            width: 314px;
-            height: 414px;
-            top: -17px;
-            left: 20px;
+            width: 264px;
+            height: 364px;
+            top: -12px;
+            left: 15px;
         }
         
     }

@@ -15,8 +15,8 @@ function App() {
         <div className="App">
             <Particle />
            <Header />
-            {/*<Main />*/}
-            {/*<Skills />*/}
+            <Main />
+            <Skills />
             <Works />
             <Testimony />
             <Contact />
