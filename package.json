@@ -2,7 +2,6 @@
   "name": "portfolio-start",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mikhail8815.github.io/My_portfolio_1",
   "dependencies": {
     "@babel/core": "7.16.0",
     "@emailjs/browser": "^4.4.1",
