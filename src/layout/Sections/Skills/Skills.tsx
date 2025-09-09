@@ -42,7 +42,25 @@ const skillData = [
         title: "Web Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
             "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-    }
+    },
+    {
+        iconId: "redux",
+        title: "Redux",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+            "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+    },
+    {
+        iconId: "radix",
+        title: "Radix UI",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+            "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+    },
+    {
+        iconId: "material-ui",
+        title: "Material UI",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+            "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+    },
 ]
 
 export const Skills = () => {
