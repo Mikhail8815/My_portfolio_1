@@ -36,13 +36,6 @@ const skillData = [
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
-    iconId: "styledComponents",
-    title: "Styled Components",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
     iconId: "webDisigne",
     title: "Web Design",
     description:
@@ -119,6 +112,13 @@ const skillData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
+  {
+    iconId: "styledComponents",
+    title: "Styled Comp.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
 ];
 
 export const Skills = () => {
@@ -126,16 +126,11 @@ export const Skills = () => {
     <S.Skills id={"skills"}>
       <Container>
         <SectionTitle>My Skills</SectionTitle>
-        <FlexWrapper wrap="wrap" justify="space-between">
+        <FlexWrapper wrap="wrap" justify="center" gap="40px">
           <Fade cascade={true} damping={0.2}>
             {skillData.map((skill, index) => {
               return (
-                <Skill
-                  iconId={skill.iconId}
-                  key={index}
-                  title={skill.title}
-                  description={skill.description}
-                />
+                <Skill iconId={skill.iconId} key={index} title={skill.title} />
               );
             })}
           </Fade>

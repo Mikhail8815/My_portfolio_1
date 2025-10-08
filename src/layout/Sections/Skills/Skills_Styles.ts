@@ -5,48 +5,97 @@ const Skills = styled.section`
    position: relative;
 `
 const Skill = styled.div`
-    max-width: 360px;
-    padding: 42px 20px 52px;
-    flex-grow: 1;
-    
-    @media  ${theme.media.mobile} {
-        padding: 62px 0 40px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
-const SkillTitle = styled.h3`
-    margin: 70px 0 15px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 
+const SkillTitle = styled.h3`
+  margin: 20px 0 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 110px; 
+  word-wrap: break-word;
+  
+  @media ${theme.media.mobile} {
+    font-size: 12px;
+    max-width: 90px;
+  }
 `
-const SkillText = styled.p`
-    text-align: center;
-`
+
 const IconWrapper = styled.div`
-position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden; 
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30px;
+    background: ${theme.colors.accent};
+    filter: blur(15px);
+    opacity: 0.6;
+    z-index: 1;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%; 
+    background: linear-gradient(
+      to top,
+      ${theme.colors.accent}30 0%,
+      transparent 100%
+    );
+    border-radius: 0 0 100px 100px; 
+    z-index: 1;
+  }
+  
+  & > svg {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media ${theme.media.mobile} {
+    width: 80px;
+    height: 80px;
     
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        background: rgba(255, 255, 255, 0.1);
-        transform: rotate(-45deg) translate(-50%, -50%);
-        
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform-origin: top left;
+    &::after {
+      bottom: -8px;
+      height: 20px;
+      filter: blur(12px);
     }
+    
+    & > svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `
 
 export const S = {
     Skills,
     Skill,
     SkillTitle,
-    SkillText,
     IconWrapper
 }
