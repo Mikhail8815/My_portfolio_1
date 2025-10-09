@@ -1,5 +1,4 @@
 import styled, {css} from "styled-components";
-import {theme} from "../styles/theme";
 
 export const Link = styled.a<{ active?: boolean }>`
         font-weight: 400;
@@ -9,6 +8,8 @@ export const Link = styled.a<{ active?: boolean }>`
         padding: 10px;
         position: relative;
         z-index: 0;
+        color: ${props => props.theme.colors.font};
+        transition: ${props => props.theme.animations.transition};
 
         &:hover {
                 &::before {
@@ -19,7 +20,7 @@ export const Link = styled.a<{ active?: boolean }>`
         &::before {
                 content: "";
                 display: inline-block;
-                background-color: ${theme.colors.accent};
+                background-color: ${props => props.theme.colors.accent};
 
                 position: absolute;
                 bottom: 5px;
@@ -31,7 +32,7 @@ export const Link = styled.a<{ active?: boolean }>`
                         height: 10px;
 
                 `}
-                transition: ${theme.animations.transition}
+                transition: ${props => props.theme.animations.transition}
         }
 
 `

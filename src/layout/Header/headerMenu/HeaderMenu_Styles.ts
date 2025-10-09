@@ -1,5 +1,4 @@
 import styled, {css} from "styled-components";
-import {theme} from "../../../styles/theme";
 import {Link} from "react-scroll";
 
 const Mask = styled.span`
@@ -8,8 +7,8 @@ const Mask = styled.span`
     left: 0;
     height: 50%;
     overflow: hidden;
-    color: ${theme.colors.accent};
-    transition: ${theme.animations.transition};
+    color: ${props => props.theme.colors.accent};
+    transition: ${props => props.theme.animations.transition};
     
     &+&{
         top: 50%;
@@ -33,7 +32,7 @@ const NavLink = styled(Link)`
         content: "";
         display: inline-block;
         height: 3px;
-        background-color: ${theme.colors.accent};
+        background-color: ${props => props.theme.colors.accent};
 
         position: absolute;
         top: 50%;
@@ -41,7 +40,7 @@ const NavLink = styled(Link)`
         right: -10%;
         z-index: 1;
         transform: scale(0);
-        transition: ${theme.animations.transition};
+        transition: ${props => props.theme.animations.transition};
     }
     &:hover, &.active {
         &::before {
@@ -49,7 +48,7 @@ const NavLink = styled(Link)`
         }
         ${Mask} {
             transform: skewX(12deg) translateX(5px);
-            color: ${theme.colors.font};
+            color: ${props => props.theme.colors.font};
             &+${Mask} {
                 transform: skewX(12deg) translateX(-5px);
             }
@@ -66,7 +65,7 @@ const MobileMenu = styled.nav`
 `
 const MobileMenuPopap = styled.div<{isOpen: boolean}>`
     position: fixed;
-    background-color: rgba(31, 31, 32, 0.9);
+    background-color: ${props => props.theme.colors.primaryBg};
     top: 0;
     bottom: 0;
     left: 0;
@@ -106,7 +105,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         display: block;
         width: 36px;
         height: 2px;
-        background-color: ${theme.colors.font};
+        background-color: ${props => props.theme.colors.font};
         position: absolute;
         left: 40px;
         bottom: 50px;
@@ -120,7 +119,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 36px;
             height: 2px;
-            background-color: ${theme.colors.font};
+            background-color: ${props => props.theme.colors.font};
             position: absolute;
             transform: translateY(-10px);
             
@@ -133,7 +132,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 24px;
             height: 2px;
-            background-color: ${theme.colors.font};
+            background-color: ${props => props.theme.colors.font};
             position: absolute;
             transform: translateY(10px);
 

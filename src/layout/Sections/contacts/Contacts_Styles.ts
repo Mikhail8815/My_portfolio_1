@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../../../styles/theme";
 
 const Contacts = styled.section`
     position: relative;
@@ -22,22 +21,23 @@ const Form = styled.form`
 
 const Field = styled.input`
     width: 100%;
-    border: 1px solid ${theme.colors.borderColor};
+    border: 1px solid ${props => props.theme.colors.borderColor};
     height: 32px;
-    background-color: ${theme.colors.secondaryBg};
+    background-color: ${props => props.theme.colors.secondaryBg};
     padding: 7px 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.05em;
-    color: ${theme.colors.font};
+    color: ${props => props.theme.colors.font};
+    transition: ${props => props.theme.animations.transition};
     
     &::placeholder {
-        color: ${theme.colors.placeholder};
+        ${props => props.theme.colors.placeholder};
         text-transform: capitalize;
     }
     &:focus-visible {
-    outline: 1px solid ${theme.colors.borderColor};
+    outline: 1px solid ${props => props.theme.colors.borderColor};
 `
 
 export const S = {

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../../../styles/theme";
 
 const Skills = styled.section`
    position: relative;
@@ -21,8 +20,9 @@ const SkillTitle = styled.h3`
   line-height: 1.3;
   max-width: 110px; 
   word-wrap: break-word;
+  color: ${props => props.theme.colors.font};
   
-  @media ${theme.media.mobile} {
+  @media ${props => props.theme.media.mobile} {
     font-size: 12px;
     max-width: 90px;
   }
@@ -47,7 +47,7 @@ const IconWrapper = styled.div`
     transform: translateX(-50%);
     width: 80%;
     height: 30px;
-    background: ${theme.colors.accent};
+    background: ${props => props.theme.colors.accent};
     filter: blur(15px);
     opacity: 0.6;
     z-index: 1;
@@ -62,7 +62,7 @@ const IconWrapper = styled.div`
     height: 40%; 
     background: linear-gradient(
       to top,
-      ${theme.colors.accent}30 0%,
+      ${props => props.theme.colors.accent}30 0%,
       transparent 100%
     );
     border-radius: 0 0 100px 100px; 
@@ -74,9 +74,10 @@ const IconWrapper = styled.div`
     height: 50px;
     position: relative;
     z-index: 2;
+    color: ${props => props.theme.colors.accent};
   }
   
-  @media ${theme.media.mobile} {
+  @media ${props => props.theme.media.mobile}  {
     width: 80px;
     height: 80px;
     

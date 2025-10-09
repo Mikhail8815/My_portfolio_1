@@ -3,13 +3,15 @@ import {theme} from "../../styles/theme";
 import {font} from "../../styles/Common";
 
 const Footer = styled.footer`
-    background-color: ${theme.colors.primaryBg};
+    background-color: ${props => props.theme.colors.primaryBg};
     padding: 40px 0;
     position: relative;
+    transition: ${props => props.theme.animations.transition};
 `
 const Name = styled.span`
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
     letter-spacing: 3px;
+    color: ${props => props.theme.colors.font};
 `
 const SocialList = styled.ul`
     list-style: none;
@@ -28,12 +30,13 @@ const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: ${theme.colors.accent};
-    transition: ${theme.animations.transition};
+    color: ${props => props.theme.colors.accent};
+    transition: ${props => props.theme.animations.transition};
     
     &:hover {
-        color: ${theme.colors.primaryBg};
+        color: ${props => props.theme.colors.primaryBg};
         transform: translateY(-4px);
+        background: ${props => props.theme.colors.accent};
     }
 
 `
@@ -42,6 +45,7 @@ const Copyright = styled.small`
     font-size: 12px;
     text-align: center;
     opacity: 0.5;
+    color: ${props => props.theme.colors.font};
 `
 export const S = {
     Footer,

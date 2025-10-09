@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {theme} from "../../../styles/theme";
 import {Link} from "../../../components/Link";
-import {Button} from "../../../components/Button";
 
 const Works = styled.section`
   ${FlexWrapper} {
@@ -11,9 +9,8 @@ const Works = styled.section`
     position: relative;
 `
 const Work = styled.div`
-    background-color: ${theme.colors.secondaryBg};
-    //width: 330px;
-    //flex-grow: 1;
+    background-color: ${props => props.theme.colors.secondaryBg};
+    transition: ${props => props.theme.animations.transition};
     
     ${Link} {
         padding: 10px 0;
@@ -22,9 +19,6 @@ const Work = styled.div`
         }
     }
     
-    // @media ${theme.media.desktop} {
-    //     max-width: 540px;
-    // }
 `
 const Image = styled.img`
     width: 100%;
@@ -33,14 +27,40 @@ const Image = styled.img`
 `
 
 const Title = styled.h3`
-
+color: ${props => props.theme.colors.font};
 `
 
 const Text = styled.p`
     margin: 14px 0 10px;
+    color: ${props => props.theme.colors.font};
 `
 const Description = styled.div`
     padding: 25px 20px;
+`
+const ShowProjectButton = styled.button`
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    transition: ${props => props.theme.animations.transition};
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 170px;
+    height: 32px;
+    color: white;
+    background-color: ${props => props.theme.colors.accent};
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: white;
+        color: ${props => props.theme.colors.accent};
+        transform: translate(-50%, -50%) scale(1.05);
+    }
 `
 const ImageWrapper = styled.div`
     position: relative;
@@ -48,47 +68,23 @@ const ImageWrapper = styled.div`
         &::before {
            opacity: 1;
         }
-        button {
+        ${ShowProjectButton} {
             opacity: 1;
             transform: translate(-50%, -50%);
         }
     }
     
-    @media ${theme.media.tablet} {
+    @media ${props => props.theme.media.tablet} {
         &::before {
             opacity: 1;
         }
-        button {
+        ${ShowProjectButton} {
             opacity: 1;
         }
     }
     
-    ${Button} {
-        opacity: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -40%);
-        transition: ${theme.animations.transition};
-        
-        &::before {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        backdrop-filter: blur(2px);
-        background: rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        transition: ${theme.animations.transition};
-    }
 `
+
 
 export const S = {
     Works,
@@ -97,5 +93,6 @@ export const S = {
     Title,
     Text,
     Description,
-    ImageWrapper
+    ImageWrapper,
+    ShowProjectButton
 }

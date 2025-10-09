@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../styles/theme";
 import {font} from "../styles/Common";
 
 export const SectionTitle = styled.h2`
@@ -8,19 +7,20 @@ export const SectionTitle = styled.h2`
     letter-spacing: 5px;
     position: relative;
     margin-bottom: 90px;
+    color: ${props => props.theme.colors.font};
     
     &::before {
         content: "";
         width: 55px;
         height: 1px;
         display: inline-block;
-        background-color: ${theme.colors.accent};
+        background-color: ${props => props.theme.colors.accent};
         position: absolute;
         left: 50%;
         bottom: -30px;
         transform: translateX(-50%);
         
-        @media ${theme.media.mobile} {
+        @media ${props => props.theme.media.mobile} {
             bottom: -24px;
         }
     }
