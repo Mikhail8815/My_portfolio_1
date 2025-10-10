@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../../styles/theme";
 
 const Slider = styled.div`
     max-width: 500px;
@@ -14,7 +13,7 @@ const Slide = styled.div`
 `
 
 const Text = styled.p`
-
+color: ${props => props.theme.colors.font}
 `
 
 const Name = styled.span`
@@ -25,6 +24,7 @@ const Name = styled.span`
     text-transform: uppercase;
     margin: 22px 0 32px;
     display: inline-block;
+    color: ${props => props.theme.colors.font};
 `
 
 const Pagination = styled.div`
@@ -39,7 +39,7 @@ span {
         
     }
     &.active {
-        background-color: ${theme.colors.accent};
+        background-color: ${props => props.theme.colors.accent};
         width: 20px;
     }
 }

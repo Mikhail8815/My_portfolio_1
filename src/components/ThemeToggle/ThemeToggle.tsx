@@ -26,7 +26,6 @@ const ToggleWrapper = styled.div`
 
 export const ThemeToggle: React.FC = () => {
   const { isDark, toggleTheme } = useTheme();
-  console.log("Current theme is dark:", isDark);
   return (
     <ToggleWrapper>
       <ToggleButton onClick={toggleTheme}>

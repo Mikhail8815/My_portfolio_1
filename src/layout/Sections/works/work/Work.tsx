@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "../../../../components/Link";
-import { Button } from "../../../../components/Button";
 import { S } from "../Works_styles";
 
 type WorkPropsType = {

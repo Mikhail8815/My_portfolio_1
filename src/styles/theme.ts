@@ -20,13 +20,13 @@ export const darkTheme = {
 
 export const lightTheme = {
     colors: {
-        primaryBg: "#FFFFFF",
-        secondaryBg: "#F8F9FA",
-        accent: "#7572D5", 
-        font: "#1F1F20", 
-        borderColor: "#dee2e6",
-        placeholder: "#6c757d",
-        particles: "#1F1F20" 
+        primaryBg: "#FDFDF6",          
+        secondaryBg: "#F5F5ED",         
+        accent: "#7572D5",
+        font: "#2C2C2C",               
+        borderColor: "#D6D6C2",
+        placeholder: "#7A7A6A",         
+        particles: "#2C2C2C"
     },
     media: {
         tablet: "screen and (max-width: 768px)",
@@ -38,5 +38,4 @@ export const lightTheme = {
     }
 }
 
-export const theme = darkTheme;
 export type ThemeType = typeof darkTheme;

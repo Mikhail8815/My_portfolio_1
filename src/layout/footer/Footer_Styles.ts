@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../../styles/theme";
 import {font} from "../../styles/Common";
 
 const Footer = styled.footer`
@@ -44,7 +43,7 @@ const Copyright = styled.small`
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.7;
     color: ${props => props.theme.colors.font};
 `
 export const S = {
