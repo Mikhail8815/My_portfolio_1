@@ -6,6 +6,7 @@ import { MobileMenu } from "./headerMenu/mobileMenu/MobileMenu";
 import { DesktopMenu } from "./headerMenu/desktopMenu/DesktopMenu";
 import { S } from "./Header_Styles";
 import { ThemeToggle } from "../../components/ThemeToggle/ThemeToggle";
+import { LanguageToggle } from "../../components/LanguageToggle/LanguageToggle";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -22,6 +23,7 @@ export const Header: React.FC = () => {
       <Container>
         <FlexWrapper justify="space-between" align={"center"}>
           <Logo />
+          <LanguageToggle />
           <ThemeToggle />
           {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
         </FlexWrapper>

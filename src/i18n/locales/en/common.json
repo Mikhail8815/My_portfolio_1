@@ -1,0 +1,12 @@
+{
+  "header": {
+    "home": "Home",
+    "skills": "Skills",
+    "works": "Works", 
+    "testimony": "Testimony",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2024 Mikhail Horlenka, All Rights Reserved"
+  }
+}
