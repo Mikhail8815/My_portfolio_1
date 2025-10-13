@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../styles/theme";
 
 export const Button = styled.button`
     font-weight: 400;
@@ -10,6 +9,8 @@ export const Button = styled.button`
     height: 32px;
     position: relative;
     z-index: 0;
+    color: ${props => props.theme.colors.font};
+    transition: ${props => props.theme.animations.transition};
     
     &:hover {
         &::before {
@@ -23,8 +24,8 @@ export const Button = styled.button`
         display: inline-block;
         height: 10px;
         width: 50%;
-        background-color: ${theme.colors.accent};
-        transition: ${theme.animations.transition};
+        background-color: ${props => props.theme.colors.accent};
+        transition: ${props => props.theme.animations.transition};
         position: absolute;
         bottom: 0;
         left: 50%;

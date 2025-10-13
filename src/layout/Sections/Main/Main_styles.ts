@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {theme} from "../../../styles/theme";
 import {font} from "../../../styles/Common";
 
 const Photo = styled.img`
@@ -8,18 +7,20 @@ const Photo = styled.img`
     object-fit: cover;
     margin-right: 15px;
 
-    @media ${theme.media.mobile} {
+    @media ${props => props.theme.media.mobile}{
         width: 260px;
         height: 330px;
     }
 `
 const Main = styled.section`
     min-height: 100vh;
-    background-color: rgba(120, 79, 20, 0.83);
+    background-color: ${props => props.theme.colors.primaryBg};
     display: flex;
+    transition: ${props => props.theme.animations.transition};
 `
 const MainTitle = styled.h1`
     ${font({ weight: 400, Fmax: 27, Fmin:20 })}
+    color: ${props => props.theme.colors.font};
     p {
         display: none;
     }
@@ -31,6 +32,7 @@ const Name = styled.h2`
     //font-size: 50px;
     letter-spacing: 0.05em;
     margin: 10px 0;
+    color: ${props => props.theme.colors.font};
     
     
     span {
@@ -42,14 +44,14 @@ const Name = styled.h2`
             display: inline-block;
             width: 100%;
             height: 20px;
-            background-color: ${theme.colors.accent};
+            background-color: ${props => props.theme.colors.accent};
             position: absolute;
             bottom: 0;
             z-index: -1;
         }
     }
     
-    @media ${theme.media.mobile} {
+    @media ${props => props.theme.media.mobile} {
         margin: 15px 0 22px;
     }
 `
@@ -57,6 +59,7 @@ const Name = styled.h2`
 const SmallText = styled.h2`
     font-weight: 400;
     font-size: 14px;
+    color: ${props => props.theme.colors.font};
 `
 
 const PhotoWrapper = styled.div`
@@ -66,14 +69,14 @@ position: relative;
         content: "";
         width: 330px;
         height: 440px;
-        border: 5px solid ${theme.colors.accent};
+        border: 5px solid ${props => props.theme.colors.accent};
         
         position: absolute;
         top: -24px;
         left: 24px;
         z-index: -1;
 
-        @media ${theme.media.mobile} {
+        @media ${props => props.theme.media.mobile} {
             width: 264px;
             height: 364px;
             top: -12px;
@@ -81,7 +84,7 @@ position: relative;
         }
         
     }
-    @media ${theme.media.mobile} {
+    @media ${props => props.theme.media.mobile} {
         margin-top: 65px;
     }
 `
