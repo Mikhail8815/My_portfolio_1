@@ -33,7 +33,7 @@ const skillData = [
     },
     {
         iconId: "styledComponents",
-        title: "Styled Components",
+        title: "Styled ",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
             "tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
@@ -62,8 +62,8 @@ const skillData = [
             "tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
-        iconId: "material-ui",
-        title: "Material UI",
+        iconId: "nextjs",
+        title: "Next JS",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
             "tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
