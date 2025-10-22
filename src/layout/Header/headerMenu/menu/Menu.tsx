@@ -1,54 +1,60 @@
-import React from 'react';
-import {S} from "../HeaderMenu_Styles"
+import React from "react";
+import { S } from "../HeaderMenu_Styles";
+import { useTranslation } from "react-i18next";
 
-// const menuItems = ["Home", "Skills", "Works", "Testimony", "Contact"];
 const menuItems = [
-    {
-        title: "Home",
-        href: "home"
-    },
-    {
-        title: "Skills",
-        href: "skills"
-    },
-    {
-        title: "Works",
-        href: "works"
-    },
-    {
-        title: "Testimony",
-        href: "testimony"
-    },
-    {
-        title: "Contact",
-        href: "contact"
-    }
-
-]
+  {
+    titleKey: "header.home",
+    href: "home",
+  },
+  {
+    titleKey: "header.skills",
+    href: "skills",
+  },
+  {
+    titleKey: "header.works",
+    href: "works",
+  },
+  {
+    titleKey: "header.testimony",
+    href: "testimony",
+  },
+  {
+    titleKey: "header.contact",
+    href: "contact",
+  },
+];
 
 export const Menu: React.FC = () => {
-    return (
-        <ul>
-            {menuItems.map((item, index) => {
-                return <S.MenuItem key={index}>
-                    <S.NavLink to={item.href}
-                               smooth={true}
-                               activeClass="active"
-                               spy={true}
-                               offset={15}>
-                        {item.title}
-                        <S.Mask>
-                            <span>{item.title}</span>
-                        </S.Mask>
-                        <S.Mask>
-                            <span>{item.title}</span>
-                        </S.Mask>
-                    </S.NavLink>
-                </S.MenuItem>
-            })}
-        </ul>
-    );
-}
+  const { t } = useTranslation();
 
+  return (
+    <ul>
+      {menuItems.map((item, index) => {
+        const title = t(item.titleKey);
+
+        return (
+          <S.MenuItem key={index}>
+            <S.NavLink
+              to={item.href}
+              smooth={true}
+              activeClass="active"
+              spy={true}
+              offset={15}
+            >
+              {title}
+              <S.Mask>
+                <span>{title}</span>
+              </S.Mask>
+              <S.Mask>
+                <span>{title}</span>
+              </S.Mask>
+            </S.NavLink>
+          </S.MenuItem>
+        );
+      })}
+    </ul>
+  );
+};
 
 export default Menu;

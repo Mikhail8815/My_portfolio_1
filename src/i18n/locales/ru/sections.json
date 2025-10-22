@@ -1,0 +1,37 @@
+{
+  "main": {
+    "greeting": "Привет",
+    "name": "Я",
+    "fullName": "Михаил Горленко",
+    "title": "Веб-разработчик",
+    "typewriter": {
+      "webDeveloper": "Веб-разработчик",
+      "frontendDeveloper": "Frontend-разработчик", 
+      "webDesigner": "Веб-дизайнер"
+    }
+  },
+  "skills": {
+    "title": "Мои навыки",
+    "description": "Технологии которые я использую в работе"
+  },
+  "works": {
+    "title": "Мои проекты",
+    "viewProject": "Смотреть проект", 
+    "description": "Описание проекта",
+    "demo": "Демо", 
+    "code": "Код"   
+  },
+  "testimony": {
+    "title": "Отзывы"
+  },
+  "contact": {
+    "title": "Контакты",
+    "form": {
+      "name": "Имя",
+      "email": "Email", 
+      "subject": "Тема", 
+      "message": "Сообщение",
+      "send": "Отправить"
+    }
+  }
+}

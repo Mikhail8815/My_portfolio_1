@@ -1,0 +1,37 @@
+{
+  "main": {
+    "greeting": "Hi There",
+    "name": "I am",
+    "fullName": "Mikhail Horlenka",
+    "title": "A Web Developer",
+    "typewriter": {
+      "webDeveloper": "A Web Developer",
+      "frontendDeveloper": "A Frontend Developer",
+      "webDesigner": "A Web Designer"
+    }
+  },
+  "skills": {
+    "title": "My Skills", 
+    "description": "Technologies I use in my work"
+  },
+  "works": {
+    "title": "My Works",
+    "viewProject": "View Project",
+    "description": "Project description",
+    "demo": "Demo", 
+    "code": "Code"  
+  },
+  "testimony": {
+    "title": "Testimony"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message", 
+      "send": "Send"
+    }
+  }
+}

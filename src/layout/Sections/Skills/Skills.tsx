@@ -5,6 +5,7 @@ import { Skill } from "./skill/Skill";
 import { Container } from "../../../components/Container";
 import { S } from "../Skills/Skills_Styles";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 const skillData = [
   {
@@ -122,10 +123,12 @@ const skillData = [
 ];
 
 export const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <S.Skills id={"skills"}>
       <Container>
-        <SectionTitle>My Skills</SectionTitle>
+        <SectionTitle>{t("sections:skills.title")}</SectionTitle>
         <FlexWrapper wrap="wrap" justify="center" gap="40px">
           <Fade cascade={true} damping={0.2}>
             {skillData.map((skill, index) => {

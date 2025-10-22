@@ -6,12 +6,15 @@ import { Slider } from "../../../components/slider/Slider";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { S } from "../Skills/Skills_Styles";
 import { Container } from "../../../components/Container";
+import { useTranslation } from "../../../hooks/useTranslation";
 
 export const Testimony: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledTestimony id={"testimony"}>
       <Container>
-        <SectionTitle>Testimony</SectionTitle>
+        <SectionTitle>{t("sections:testimony.title")}</SectionTitle>
         <FlexWrapper direction={"column"} align={"center"}>
           <S.IconWrapper>
             <Icon iconId={"quote"} />
