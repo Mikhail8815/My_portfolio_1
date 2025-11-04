@@ -4,14 +4,17 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { useTranslation } from "../../../hooks/useTranslation";
 
 export const Slogan: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledSlogan>
       <Container>
         <FlexWrapper direction="column" align={"center"}>
-          <SectionTitle>I Am Available For Freelance</SectionTitle>
-          <Button>Hire me</Button>
+          <SectionTitle>{t("sections:slogan.title")}</SectionTitle>
+          <Button>{t("sections:slogan.button")}</Button>
         </FlexWrapper>
       </Container>
     </StyledSlogan>
@@ -20,5 +23,5 @@ export const Slogan: React.FC = () => {
 
 const StyledSlogan = styled.section`
   min-height: 30vh;
-  background-color: rgba(217, 67, 232, 0.83);
+  background-color: ${(props) => props.theme.colors.accent};
 `;

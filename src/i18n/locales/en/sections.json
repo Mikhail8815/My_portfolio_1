@@ -33,5 +33,9 @@
       "message": "Message", 
       "send": "Send"
     }
+  },
+  "slogan": {
+    "title": "I Am Available For Freelance", 
+    "button": "Hire me"
   }
 }
