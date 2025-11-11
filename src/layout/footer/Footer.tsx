@@ -26,7 +26,7 @@ const socialItemsData = [
     ariaLabel: "LinkedIn",
   },
   {
-    iconId: "github",
+    iconId: "githubmini",
     href: "https://github.com/Mikhail8815",
     ariaLabel: "GitHub",
   },
