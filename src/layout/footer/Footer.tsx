@@ -39,6 +39,16 @@ export const Footer: React.FC = () => {
     <S.Footer>
       <FlexWrapper direction={"column"} align={"center"}>
         <S.Name>Mikhail</S.Name>
+        <S.ContactInfo>
+          <a href="mailto:mgorlenko1505@gmail.com">
+            <Icon iconId="email" width="16" height="16" />
+            mgorlenko1505@gmail.com
+          </a>
+          <a href="tel:+375296820881">
+            <Icon iconId="phone" width="16" height="16" />
+            +375 (29) 682-08-81
+          </a>
+        </S.ContactInfo>
         <S.SocialList>
           {socialItemsData.map((item, i) => {
             return (
