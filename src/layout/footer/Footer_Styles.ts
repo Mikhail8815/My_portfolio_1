@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {font} from "../../styles/Common";
 
+
 const Footer = styled.footer`
     background-color: ${props => props.theme.colors.primaryBg};
     padding: 40px 0;
@@ -11,6 +12,38 @@ const Name = styled.span`
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
     letter-spacing: 3px;
     color: ${props => props.theme.colors.font};
+`
+
+const ContactInfo = styled.div`
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: ${props => props.theme.colors.font};
+    transition: ${props => props.theme.animations.transition};
+    
+    &:hover {
+      color: ${props => props.theme.colors.accent};
+    }
+  }
+  
+  @media ${props => props.theme.media.mobile} {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center; 
+    width: 100%; 
+    
+    a {
+      justify-content: center; 
+      text-align: center;
+    }
+  }
 `
 const SocialList = styled.ul`
     list-style: none;
@@ -49,6 +82,7 @@ const Copyright = styled.small`
 export const S = {
     Footer,
     Name,
+    ContactInfo,
     SocialList,
     SocialItem,
     SocialLink,

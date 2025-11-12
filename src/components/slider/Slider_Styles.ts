@@ -8,22 +8,26 @@ const Slider = styled.div`
     text-align: center;
 `
 const Slide = styled.div`
-    
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 `
 
 const Text = styled.p`
-color: ${props => props.theme.colors.font}
+    color: ${props => props.theme.colors.font};
+    max-width: 500px; 
+    line-height: 1.4; 
+    margin: 0 0 20px; 
 `
 
-const Name = styled.span`
+const Title = styled.h3` 
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px; 
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 22px 0 32px;
-    display: inline-block;
+    margin: 20px 0 15px;
     color: ${props => props.theme.colors.font};
 `
 
@@ -48,6 +52,6 @@ export const S = {
     Slider,
     Slide,
     Text,
-    Name,
+    Title,
     Pagination
 }

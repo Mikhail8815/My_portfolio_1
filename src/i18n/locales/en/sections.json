@@ -1,0 +1,55 @@
+{
+  "main": {
+    "greeting": "Hi There",
+    "name": "I am",
+    "fullName": "Mikhail Horlenka",
+    "title": "A Web Developer",
+    "typewriter": {
+      "webDeveloper": "A Web Developer",
+      "frontendDeveloper": "A Frontend Developer",
+      "webDesigner": "A Web Designer"
+    }
+  },
+  "skills": {
+    "title": "My Skills", 
+    "description": "Technologies I use in my work"
+  },
+  "works": {
+    "title": "My Works",
+    "viewProject": "View Project",
+    "description": "Project description",
+    "demo": "Demo", 
+    "code": "Code"  
+  },
+  "testimony": {
+    "title": "Testimony"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message", 
+      "send": "Send"
+    }
+  },
+  "slogan": {
+    "title": "Have A Project In Mind? Let's Discuss!", 
+    "button": "Contact Me"
+  },
+  "principles": {
+    "cleanCode": {
+      "title": "Clean Code",
+      "text": "Following best practices, readable and maintainable code, using TypeScript for type safety"
+    },
+    "responsive": {
+      "title": "Responsive Design",
+      "text": "Modern adaptive layout that looks perfect on all devices - from smartphones to desktops"
+    },
+    "techStack": {
+      "title": "Modern Technologies",
+      "text": "Using up-to-date stack: React, TypeScript, Styled Components, Node.js and other modern tools"
+    }
+  }
+}

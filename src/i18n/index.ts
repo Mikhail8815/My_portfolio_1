@@ -2,13 +2,17 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import enCommon from './locales/en/common.json';
 import ruCommon from './locales/ru/common.json';
+import enSections from './locales/en/sections.json';
+import ruSections from './locales/ru/sections.json';
 
 const resources = {
   en: {
-    common: enCommon
+    common: enCommon,
+    sections: enSections,
   },
   ru: {
-    common: ruCommon
+    common: ruCommon,
+    sections: ruSections
   }
 };
 
