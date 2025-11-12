@@ -9,7 +9,7 @@ import { useTranslation } from "../../../hooks/useTranslation";
 export const Contact: React.FC = () => {
   const { t } = useTranslation();
 
-  const form = useRef<ElementRef<"form">>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
