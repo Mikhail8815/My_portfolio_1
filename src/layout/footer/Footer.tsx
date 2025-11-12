@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
           </a>
           <a href="tel:+375296820881">
             <Icon iconId="phone" width="16" height="16" />
-            +375 (29) 682-08-81
+            +375 (29) 328-72-48
           </a>
         </S.ContactInfo>
         <S.SocialList>

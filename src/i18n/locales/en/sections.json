@@ -35,7 +35,21 @@
     }
   },
   "slogan": {
-    "title": "I Am Available For Freelance", 
-    "button": "Hire me"
+    "title": "Have A Project In Mind? Let's Discuss!", 
+    "button": "Contact Me"
+  },
+  "principles": {
+    "cleanCode": {
+      "title": "Clean Code",
+      "text": "Following best practices, readable and maintainable code, using TypeScript for type safety"
+    },
+    "responsive": {
+      "title": "Responsive Design",
+      "text": "Modern adaptive layout that looks perfect on all devices - from smartphones to desktops"
+    },
+    "techStack": {
+      "title": "Modern Technologies",
+      "text": "Using up-to-date stack: React, TypeScript, Styled Components, Node.js and other modern tools"
+    }
   }
 }
