@@ -1,4 +1,4 @@
-import React, { ElementRef, useRef } from "react";
+import React, { useRef } from "react";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
