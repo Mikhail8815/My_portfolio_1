@@ -16,7 +16,6 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.0",
     "@types/react-scroll": "^1.8.10",
-    "@types/styled-components": "5.1.26",
     "babel-jest": "27.4.2",
     "babel-loader": "8.2.3",
     "babel-plugin-named-asset-import": "0.3.8",
@@ -109,7 +108,7 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^6.0.0",
+    "@types/styled-components": "5.1.26",
     "babel-plugin-styled-components": "2.0.7"
   },
   "jest": {
