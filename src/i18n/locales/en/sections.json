@@ -21,9 +21,6 @@
     "demo": "Demo", 
     "code": "Code"  
   },
-  "testimony": {
-    "title": "Testimony"
-  },
   "contact": {
     "title": "Contact",
     "form": {
@@ -39,6 +36,7 @@
     "button": "Contact Me"
   },
   "principles": {
+    "title": "Work Principles",
     "cleanCode": {
       "title": "Clean Code",
       "text": "Following best practices, readable and maintainable code, using TypeScript for type safety"
@@ -49,7 +47,7 @@
     },
     "techStack": {
       "title": "Modern Technologies",
-      "text": "Using up-to-date stack: React, TypeScript, Styled Components, Node.js and other modern tools"
+      "text": "Using up-to-date stack: React, TypeScript, Styled Components, Next.js and other modern tools"
     }
   }
 }

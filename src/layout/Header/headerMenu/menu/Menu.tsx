@@ -16,8 +16,8 @@ const menuItems = [
     href: "works",
   },
   {
-    titleKey: "header.testimony",
-    href: "testimony",
+    titleKey: "header.principles",
+    href: "principles",
   },
   {
     titleKey: "header.contact",

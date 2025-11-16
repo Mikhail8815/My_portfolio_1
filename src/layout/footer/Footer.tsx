@@ -40,9 +40,9 @@ export const Footer: React.FC = () => {
       <FlexWrapper direction={"column"} align={"center"}>
         <S.Name>Mikhail</S.Name>
         <S.ContactInfo>
-          <a href="mailto:mgorlenko1505@gmail.com">
+          <a href="mailto:gorlenko.mikhail@gmail.com">
             <Icon iconId="email" width="16" height="16" />
-            mgorlenko1505@gmail.com
+            gorlenko.mikhail@gmail.com
           </a>
           <a href="tel:+375296820881">
             <Icon iconId="phone" width="16" height="16" />

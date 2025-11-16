@@ -15,7 +15,7 @@ type SlidePropsType = {
 const Slide = (props: SlidePropsType) => {
   return (
     <S.Slide>
-      <Icon iconId={props.iconId} width="50" height="50" />
+      <Icon iconId={props.iconId} />
       <S.Title>{props.title}</S.Title>
       <S.Text>{props.text}</S.Text>
     </S.Slide>
@@ -44,7 +44,7 @@ export const Slider = () => {
   ];
 
   return (
-    <S.Slider>
+    <S.Slider >
       <AliceCarousel mouseTracking items={items} />
     </S.Slider>
   );

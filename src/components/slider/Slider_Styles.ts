@@ -6,12 +6,38 @@ const Slider = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    
+    .alice-carousel {
+        margin-top: 20px; 
+    }
+
+    .alice-carousel__dots {
+        margin: 20px 0 0 0; 
+    }
+
+    .alice-carousel__dots-item {
+        background-color: ${props => props.theme.colors.font}!important;
+        opacity: 0.3;
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .alice-carousel__dots-item.__active {
+        background-color: ${props => props.theme.colors.accent}!important;
+        opacity: 1;
+        width: 20px;
+        border-radius: 10px;
+    }
 `
 const Slide = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    padding: 40px 20px;
 `
 
 const Text = styled.p`
@@ -31,27 +57,9 @@ const Title = styled.h3`
     color: ${props => props.theme.colors.font};
 `
 
-const Pagination = styled.div`
-span {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    &+span {
-        margin-left: 5px;
-        
-    }
-    &.active {
-        background-color: ${props => props.theme.colors.accent};
-        width: 20px;
-    }
-}
-`
 export const S = {
     Slider,
     Slide,
     Text,
     Title,
-    Pagination
 }

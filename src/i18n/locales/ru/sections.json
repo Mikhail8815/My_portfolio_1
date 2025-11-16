@@ -21,9 +21,6 @@
     "demo": "Демо", 
     "code": "Код"   
   },
-  "testimony": {
-    "title": "Отзывы"
-  },
   "contact": {
     "title": "Контакты",
     "form": {
@@ -39,6 +36,7 @@
     "button": "Написать"
   },
   "principles": {
+    "title": "Принципы работы",
     "cleanCode": {
       "title": "Чистый код",
       "text": "Соблюдение лучших практик, читаемый и поддерживаемый код, использование TypeScript для типобезопасности"
@@ -49,7 +47,7 @@
     },
     "techStack": {
       "title": "Современные технологии", 
-      "text": "Использую актуальный стек: React, TypeScript, Styled Components, Node.js и другие современные инструменты"
+      "text": "Использую актуальный стек: React, TypeScript, Styled Components, Next.js и другие современные инструменты"
     }
   }
 }
