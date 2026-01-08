@@ -3,15 +3,15 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { TabMenu } from "./TabMenu/TabMenu";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Work } from "./work/Work";
-import socialImg from "./../../../assets/images/Proj - 1.jpg";
-import timerImg from "./../../../assets/images/Proj - 2.jpg";
+import todoImg from "./../../../assets/images/todolist.jpeg";
+import ecommerceImg from "./../../../assets/images/e-commerce.jpg";
+import socialImg from "./../../../assets/images/social-network.jpeg";
 import { Container } from "../../../components/Container";
 import { S } from "../works/Works_styles";
 import { TabStatusType } from "./TabMenu/TabMenu";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "../../../hooks/useTranslation";
 
-// const tabsItems = ["All", "Landing Page", "React", "SPA"]
 
 const tabsItems: Array<{ status: TabStatusType; title: string }> = [
   {
@@ -19,61 +19,42 @@ const tabsItems: Array<{ status: TabStatusType; title: string }> = [
     status: "all",
   },
   {
-    title: "Landing Page",
-    status: "landing",
-  },
-  {
-    title: "React",
+    title: "React/SPA",
     status: "react",
   },
   {
-    title: "SPA",
-    status: "spa",
+    title: "Next JS",
+    status: "nextjs",
   },
 ];
 
 const worksData = [
   {
-    title: "Social Network",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    src: socialImg,
-    type: "spa",
+    titleKey: "sections:works.projects.todoList.title",
+    descriptionKey: "sections:works.projects.todoList.description",
+    src: todoImg,
+    type: "react",
     id: 1,
+    demoLink: "https://mikhail8815.github.io/Todolist-with-RTK_sprint_5",
+    codeLink: "https://github.com/Mikhail8815/Todolist-with-RTK_sprint_5"
   },
   {
-    title: "Timer",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    src: timerImg,
+    titleKey: "sections:works.projects.ecommerce.title",
+    descriptionKey: "sections:works.projects.ecommerce.description",
+    src: ecommerceImg,
     type: "react",
     id: 2,
+    demoLink: "https://your-ecommerce-demo.netlify.app",
+    codeLink: "https://github.com/Mikhail8815/Shop"
   },
   {
-    title: "Social Network",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    titleKey: "sections:works.projects.social-network.title",
+    descriptionKey: "sections:works.projects.social-network.description",
     src: socialImg,
-    type: "spa",
+    type: "nextjs",
     id: 3,
-  },
-  {
-    title: "Timer",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    src: timerImg,
-    type: "react",
-    id: 4,
-  },
-  {
-    title: "Social Network",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    src: socialImg,
-    type: "spa",
-    id: 5,
-  },
-  {
-    title: "Timer",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    src: timerImg,
-    type: "react",
-    id: 6,
+    demoLink: "https://vopp.me",
+    codeLink: "https://github.com/incubator-social/vopp.me"
   },
 ];
 
@@ -83,14 +64,11 @@ export const Works: React.FC = () => {
   const [currentFilterStatus, setCurrentFilterStatus] = useState("all");
   let filteredWorks = worksData;
 
-  if (currentFilterStatus === "landing") {
-    filteredWorks = worksData.filter((work) => work.type === "landing");
-  }
   if (currentFilterStatus === "react") {
     filteredWorks = worksData.filter((work) => work.type === "react");
   }
-  if (currentFilterStatus === "spa") {
-    filteredWorks = worksData.filter((work) => work.type === "spa");
+  if (currentFilterStatus === "nextjs") {
+    filteredWorks = worksData.filter((work) => work.type === "nextjs");
   }
 
   function changeFilterStatus(value: TabStatusType) {
@@ -123,10 +101,12 @@ export const Works: React.FC = () => {
                   key={work.id}
                 >
                   <Work
-                    title={work.title}
-                    text={work.text}
-                    src={work.src}
-                    key={work.id}
+                      titleKey={work.titleKey}
+                      descriptionKey={work.descriptionKey}
+                      src={work.src}
+                      demoLink={work.demoLink}
+                      codeLink={work.codeLink}
+                      key={work.id}
                   />
                 </motion.div>
               );

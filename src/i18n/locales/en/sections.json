@@ -19,7 +19,21 @@
     "viewProject": "View Project",
     "description": "Project description",
     "demo": "Demo", 
-    "code": "Code"  
+    "code": "Code",
+    "projects": {
+      "todoList": {
+        "title": "Todo List App",
+        "description": "Task management application built with React and TypeScript. Features include adding, editing, filtering tasks by status (active/completed), and persistent storage using localStorage. Includes dark/light theme toggle."
+      },
+      "ecommerce": {
+        "title": "E-commerce Store",
+        "description": "Online store prototype with product catalog, shopping cart, and checkout. Fetches product data from FakeStore API, implements user authentication with Firebase, and includes basic cart functionality."
+      },
+      "social-network": {
+        "title": "Social Network",
+        "description": "Social media web application with core features: user registration and authentication, post feed, user profiles. Team development using modern practices."
+      }
+    }
   },
   "contact": {
     "title": "Contact",
