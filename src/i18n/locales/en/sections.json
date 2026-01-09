@@ -2,12 +2,14 @@
   "main": {
     "greeting": "Hi There",
     "name": "I am",
-    "fullName": "Mikhail Horlenka",
-    "title": "A Web Developer",
+    "fullName": "Mihail Gorlenko",
+    "title": "Frontend Developer",
     "typewriter": {
-      "webDeveloper": "A Web Developer",
-      "frontendDeveloper": "A Frontend Developer",
-      "webDesigner": "A Web Designer"
+      "specializations": {
+        "react": "React Developer",
+        "typescript": "TypeScript Developer",
+        "frontend": "Frontend Developer"
+      }
     }
   },
   "skills": {

@@ -18,11 +18,27 @@ const Main = styled.section`
     display: flex;
     transition: ${props => props.theme.animations.transition};
 `
+const TextContainer = styled.div`
+    min-width: 350px; 
+    max-width: 500px;
+    flex: 1;
+    
+    @media ${props => props.theme.media.tablet} {
+        min-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    @media ${props => props.theme.media.mobile} {
+        min-width: 100%;
+    }
+`
 const MainTitle = styled.h1`
-    ${font({ weight: 400, Fmax: 27, Fmin:20 })}
+    // ${font({ weight: 400, Fmax: 27, Fmin:20 })}
     color: ${props => props.theme.colors.font};
-    p {
-        display: none;
+    .Typewriter {
+        display: inline-block;
+        min-width: 250px; 
     }
 `
 const Name = styled.h2`
@@ -33,6 +49,7 @@ const Name = styled.h2`
     letter-spacing: 0.05em;
     margin: 10px 0;
     color: ${props => props.theme.colors.font};
+    white-space: nowrap;
     
     
     span {
@@ -53,6 +70,7 @@ const Name = styled.h2`
     
     @media ${props => props.theme.media.mobile} {
         margin: 15px 0 22px;
+        white-space: normal;
     }
 `
 
@@ -96,4 +114,5 @@ export const S = {
     Name,
     SmallText,
     PhotoWrapper,
+    TextContainer
 }

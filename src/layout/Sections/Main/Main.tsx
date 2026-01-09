@@ -15,26 +15,26 @@ export const Main: React.FC = () => {
       <Container>
         <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
           <div>
+            <S.TextContainer>
             <S.SmallText>{t("sections:main.greeting")}</S.SmallText>
             <S.Name>
               {t("sections:main.name")}{" "}
               <span>{t("sections:main.fullName")}</span>
             </S.Name>
-            {/*<S.MainTitle>A Web Developer</S.MainTitle>*/}
             <S.MainTitle>
-              <p>{t("sections:main.title")}</p>
               <Typewriter
-                options={{
-                  strings: [
-                    t("sections:main.typewriter.webDeveloper"),
-                    t("sections:main.typewriter.frontendDeveloper"),
-                    t("sections:main.typewriter.webDesigner"),
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
+                  options={{
+                    strings: [
+                      t("sections:main.typewriter.specializations.react"),
+                      t("sections:main.typewriter.specializations.typescript"),
+                      t("sections:main.typewriter.specializations.frontend"),
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
               />
             </S.MainTitle>
+            </S.TextContainer>
           </div>
           <Tilt
             className="parallax-effect-img"

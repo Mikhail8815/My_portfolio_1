@@ -5,9 +5,11 @@
     "fullName": "Михаил Горленко",
     "title": "Веб-разработчик",
     "typewriter": {
-      "webDeveloper": "Веб-разработчик",
-      "frontendDeveloper": "Frontend-разработчик", 
-      "webDesigner": "Веб-дизайнер"
+      "specializations": {
+        "react": "React разработчик",
+        "typescript": "TypeScript разработчик",
+        "frontend": "Frontend разработчик"
+      }
     }
   },
   "skills": {

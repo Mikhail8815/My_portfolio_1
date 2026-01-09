@@ -11,9 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         margin: 0;
-        font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+        font-family: "Poppins", "Arial", "Helvetica", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: ${props => props.theme?.colors?.font || '#FFFFFF'};
@@ -28,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme?.colors?.font || '#FFFFFF'};
         cursor: pointer;
     }
-     
+
     ul {
         list-style: none;
     }
@@ -55,14 +53,14 @@ export const GlobalStyle = createGlobalStyle`
     section:nth-of-type(even) {
         background-color: ${props => props.theme?.colors?.secondaryBg || '#252527'};
     }
-    
+
     h3 {
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Josefin Sans", 'Jost', sans-serif;
         font-weight: 700;
         font-size: 16px;
         letter-spacing: 1px;
     }
-    
+
     p {
         font-weight: 400;
         font-size: 14px;

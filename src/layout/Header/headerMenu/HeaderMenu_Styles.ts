@@ -22,7 +22,7 @@ const MenuItem = styled.li`
     position: relative;
 `
 const NavLink = styled(Link)`
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Josefin Sans", "Jost", sans-serif;
     font-weight: 400;
     font-size: 30px;
     text-align: center;
