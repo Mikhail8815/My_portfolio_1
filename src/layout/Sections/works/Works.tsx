@@ -44,7 +44,7 @@ const worksData = [
     src: ecommerceImg,
     type: "react",
     id: 2,
-    demoLink: "https://your-ecommerce-demo.netlify.app",
+    demoLink: "https://shop-kappa-rust.vercel.app",
     codeLink: "https://github.com/Mikhail8815/Shop"
   },
   {
