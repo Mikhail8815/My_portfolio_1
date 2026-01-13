@@ -10,7 +10,7 @@ import { LanguageToggle } from "../../components/LanguageToggle/LanguageToggle";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 768;
+  const breakpoint = 865;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -22,10 +22,17 @@ export const Header: React.FC = () => {
     <S.Header>
       <Container>
         <FlexWrapper justify="space-between" align={"center"}>
-          <Logo />
-          <LanguageToggle />
-          <ThemeToggle />
-          {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
+          <S.LeftGroup>
+            <Logo />
+            <S.ControlsWrapper>
+              <LanguageToggle />
+              <ThemeToggle />
+            </S.ControlsWrapper>
+          </S.LeftGroup>
+
+          <S.RightGroup>
+            {width >= breakpoint ? <DesktopMenu /> : <MobileMenu />}
+          </S.RightGroup>
         </FlexWrapper>
       </Container>
     </S.Header>
