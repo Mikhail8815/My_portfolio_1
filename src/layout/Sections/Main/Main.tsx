@@ -7,6 +7,8 @@ import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import { useTranslation } from "react-i18next";
 
+import { DownloadCVButton } from "../../../components/DownloadCVButton/DownloadCVButton";
+
 export const Main: React.FC = () => {
   const { t } = useTranslation();
 
