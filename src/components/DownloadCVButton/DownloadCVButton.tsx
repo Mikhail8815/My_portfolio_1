@@ -46,7 +46,6 @@ export const DownloadCVButton: React.FC = () => {
         <StyledButton
             href={fileName}
             download
-            target="_blank"
             rel="noopener noreferrer"
             aria-label={buttonText}
         >
