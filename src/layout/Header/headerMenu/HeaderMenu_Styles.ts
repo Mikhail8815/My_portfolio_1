@@ -149,7 +149,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 const DesktopMenu = styled.nav`
     ul {
         display: flex;
-        gap: clamp(10px, 1.5vw, 20px);
+        gap: clamp(10px, 1.5vw, 25px);
         justify-content: center;
 `
 

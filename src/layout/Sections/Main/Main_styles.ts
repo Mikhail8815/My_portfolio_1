@@ -14,7 +14,6 @@ const Photo = styled.img`
 `
 const Main = styled.section`
     min-height: 100vh;
-    background-color: ${props => props.theme.colors.primaryBg};
     display: flex;
     transition: ${props => props.theme.animations.transition};
 `

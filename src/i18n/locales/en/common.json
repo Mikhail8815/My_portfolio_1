@@ -1,12 +1,13 @@
 {
   "header": {
     "home": "Home",
+    "about": "About",
     "skills": "Skills",
     "works": "Works", 
     "principles": "Principles",
     "contact": "Contact"
   },
   "footer": {
-    "copyright": "© 2025 Mikhail Horlenka, All Rights Reserved"
+    "copyright": "© 2026 Mikhail Horlenka, All Rights Reserved"
   }
 }

@@ -22,7 +22,6 @@ export const Principles: React.FC = () => {
 };
 
 const StyledPrinciples = styled.section`
-  background-color: ${(props) => props.theme.colors.primaryBg};
   transition: ${(props) => props.theme.animations.transition};
   position: relative;
 `;

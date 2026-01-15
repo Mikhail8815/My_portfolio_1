@@ -35,5 +35,4 @@ export const Slogan: React.FC = () => {
 
 const StyledSlogan = styled.section`
   min-height: 30vh;
-  background-color: ${(props) => props.theme.colors.accent};
 `;

@@ -7,7 +7,6 @@ import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import { useTranslation } from "react-i18next";
 
-import { DownloadCVButton } from "../../../components/DownloadCVButton/DownloadCVButton";
 
 export const Main: React.FC = () => {
   const { t } = useTranslation();
@@ -40,8 +39,8 @@ export const Main: React.FC = () => {
           </div>
           <Tilt
             className="parallax-effect-img"
-            tiltMaxAngleX={40}
-            tiltMaxAngleY={40}
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
             perspective={800}
             transitionSpeed={1500}
             scale={1.1}

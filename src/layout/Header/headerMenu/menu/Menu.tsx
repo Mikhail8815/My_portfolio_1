@@ -8,16 +8,16 @@ const menuItems = [
     href: "home",
   },
   {
+    titleKey: "header.about",
+    href: "about",
+  },
+  {
     titleKey: "header.skills",
     href: "skills",
   },
   {
     titleKey: "header.works",
     href: "works",
-  },
-  {
-    titleKey: "header.principles",
-    href: "principles",
   },
   {
     titleKey: "header.contact",

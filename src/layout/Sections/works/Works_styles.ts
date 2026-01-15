@@ -9,7 +9,7 @@ const Works = styled.section`
     position: relative;
 `
 const Work = styled.div`
-    background-color: ${props => props.theme.colors.secondaryBg};
+    background-color: ${props => props.theme.colors.primaryBg};
     transition: ${props => props.theme.animations.transition};
     
     ${Link} {

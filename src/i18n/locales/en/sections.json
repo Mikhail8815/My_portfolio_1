@@ -12,6 +12,13 @@
       }
     }
   },
+  "about": {
+    "title": "About Me",
+    "greeting": "Hi!",
+    "textPart1": "My name is Mikhail. I'm a Frontend Developer...",
+    "textPart2": "I constantly improve my skills...",
+    "textPart3": "My main priority is..."
+  },
   "skills": {
     "title": "My Skills", 
     "description": "Technologies I use in my work"

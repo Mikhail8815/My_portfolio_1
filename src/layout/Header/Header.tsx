@@ -10,7 +10,7 @@ import { LanguageToggle } from "../../components/LanguageToggle/LanguageToggle";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 865;
+  const breakpoint = 800;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
