@@ -10,8 +10,8 @@ export const About = styled.section`
 `;
 
 export const TextContainer = styled.div`
-    min-width: 350px;
-    max-width: 500px;
+    min-width: 380px;
+    max-width: 550px;
     flex: 1;
     text-align: left;
 
@@ -30,34 +30,43 @@ export const TextContainer = styled.div`
 export const AboutText = styled.p`
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: ${(props) => props.theme.colors.font};
     margin-bottom: 20px;
     text-align: justify;
 `;
 
 const Photo = styled.img`
-    width: 330px;
-    height: 430px;
+    width: 380px; 
+    height: 480px; 
     object-fit: cover;
-    margin-right: 15px;
+    object-position: center 15%;  
+    margin-right: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
 
     @media ${(props) => props.theme.media.tablet} {
-        order: 2; 
+        width: 320px;
+        height: 420px;
+        order: 2;
         margin-right: 0;
         margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     }
 
     @media ${(props) => props.theme.media.mobile} {
-        width: 260px;
-        height: 330px;
-        margin-right: 0;
-        margin-bottom: 30px;
+        width: 280px;
+        height: 380px; 
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
     }
 `;
 
 export const DesktopButtonContainer = styled.div`
     margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Центрируем кнопки */
+    width: 100%;
 
     @media ${(props) => props.theme.media.tablet} {
         display: none;

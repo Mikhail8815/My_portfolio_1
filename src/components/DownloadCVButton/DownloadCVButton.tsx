@@ -18,9 +18,9 @@ const StyledButton = styled.a`
     border: 2px solid transparent;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    min-width: 220px; 
+    min-width: 250px; 
     width: 100%; 
-    max-width: 220px; 
+    max-width: 250px; 
     box-sizing: border-box;
 
     &:hover {
@@ -33,11 +33,6 @@ const StyledButton = styled.a`
 
     &:active {
         transform: translateY(0);
-    }
-
-    @media ${(props) => props.theme.media.mobile} {
-        min-width: 200px;
-        max-width: 200px;
     }
 `;
 

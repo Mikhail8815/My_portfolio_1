@@ -15,9 +15,10 @@
   "about": {
     "title": "About Me",
     "greeting": "Hi!",
-    "textPart1": "My name is Mikhail. I'm a Frontend Developer...",
-    "textPart2": "I constantly improve my skills...",
-    "textPart3": "My main priority is..."
+    "textPart1": "My name is Mikhail, I'm a Frontend Developer with experience in creating modern Single Page Applications using TypeScript, JavaScript, React, Redux, Redux Toolkit, and RTK Query. I specialize in developing efficient and maintainable web applications with a user-friendly and responsive interface.",
+    "textPart2": "I'm constantly expanding my technical stack, currently learning backend technologies (Node.js) and planning to master Vue and React Native in the near future. To keep my algorithmic thinking sharp, I regularly solve challenges on Codewars and other platforms.",
+    "textPart3": "In my work, I adhere to key development principles such as clean maintainable code and responsive design. You can learn more about my approach in the ",
+    "textPart4": " section. I'm open to various cooperation formats - office, remote, hybrid, or flexible hours."
   },
   "skills": {
     "title": "My Skills", 
