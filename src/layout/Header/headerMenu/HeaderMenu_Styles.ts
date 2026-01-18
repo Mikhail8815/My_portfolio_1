@@ -18,43 +18,39 @@ const Mask = styled.span`
         }
     }
 `
-const MenuItem = styled.li`
-    position: relative;
-`
 const NavLink = styled(Link)`
     font-family: "Josefin Sans", "Jost", sans-serif;
     font-weight: 400;
     font-size: 30px;
-    text-align: center;
-    color: transparent;
+    color: ${props => props.theme.colors.font};
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: ${props => props.theme.animations.transition};
 
-    &::before {
+    &::after {
         content: "";
-        display: inline-block;
-        height: 3px;
-        background-color: ${props => props.theme.colors.accent};
-
         position: absolute;
-        top: 50%;
-        left: -10%;
-        right: -10%;
-        z-index: 1;
-        transform: scale(0);
-        transition: ${props => props.theme.animations.transition};
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: ${props => props.theme.colors.accent};
+        transition: width 0.3s ease;
     }
+
     &:hover, &.active {
-        &::before {
-            transform: scale(1);
-        }
-        ${Mask} {
-            transform: skewX(12deg) translateX(5px);
-            color: ${props => props.theme.colors.font};
-            &+${Mask} {
-                transform: skewX(12deg) translateX(-5px);
-            }
+        color: ${props => props.theme.colors.accent};
+
+        &::after {
+            width: 100%;
         }
     }
-`
+`;
+
+const MenuItem = styled.li`
+  list-style: none;
+`;
 
 
 //Mobile menu

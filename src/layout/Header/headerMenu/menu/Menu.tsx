@@ -29,31 +29,25 @@ export const Menu: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <ul>
-      {menuItems.map((item, index) => {
-        const title = t(item.titleKey);
+      <ul>
+        {menuItems.map((item, index) => {
+          const title = t(item.titleKey);
 
-        return (
-          <S.MenuItem key={index}>
-            <S.NavLink
-              to={item.href}
-              smooth={true}
-              activeClass="active"
-              spy={true}
-              offset={15}
-            >
-              {title}
-              <S.Mask>
-                <span>{title}</span>
-              </S.Mask>
-              <S.Mask>
-                <span>{title}</span>
-              </S.Mask>
-            </S.NavLink>
-          </S.MenuItem>
-        );
-      })}
-    </ul>
+          return (
+              <S.MenuItem key={index}>
+                <S.NavLink
+                    to={item.href}
+                    smooth={true}
+                    activeClass="active"
+                    spy={true}
+                    offset={15}
+                >
+                  {title}
+                </S.NavLink>
+              </S.MenuItem>
+          );
+        })}
+      </ul>
   );
 };
 
