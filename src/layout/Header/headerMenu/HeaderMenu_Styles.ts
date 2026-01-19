@@ -1,23 +1,6 @@
 import styled, {css} from "styled-components";
 import {Link} from "react-scroll";
 
-const Mask = styled.span`
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    overflow: hidden;
-    color: ${props => props.theme.colors.accent};
-    transition: ${props => props.theme.animations.transition};
-    
-    &+&{
-        top: 50%;
-        span{
-            display: inline-block;
-            transform: translateY(-50%);
-        }
-    }
-`
 const NavLink = styled(Link)`
     font-family: "Josefin Sans", "Jost", sans-serif;
     font-weight: 400;
@@ -149,7 +132,6 @@ const DesktopMenu = styled.nav`
 
 export const S = {
     NavLink,
-    Mask,
     MenuItem,
     MobileMenu,
     MobileMenuPopap,
