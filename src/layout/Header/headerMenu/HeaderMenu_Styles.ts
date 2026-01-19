@@ -52,9 +52,7 @@ const MenuItem = styled.li`
   list-style: none;
 `;
 
-
 //Mobile menu
-
 
 const MobileMenu = styled.nav`
     
@@ -91,15 +89,15 @@ const MobileMenuPopap = styled.div<{isOpen: boolean}>`
 `
 const BurgerButton = styled.button<{isOpen: boolean}>`
     position: fixed;
-    width: 200px;
-    height: 200px;
-    top: -100px;
-    right: -100px;
-    z-index: 99999999999;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 30px;
+    z-index: 99999;
 
     span {
         display: block;
-        width: 36px;
+        width: 30px;
         height: 2px;
         background-color: ${props => props.theme.colors.font};
         position: absolute;
@@ -126,7 +124,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         &::after {
             content: "";
             display: block;
-            width: 24px;
+            width: 30px;
             height: 2px;
             background-color: ${props => props.theme.colors.font};
             position: absolute;
