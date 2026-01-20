@@ -6,6 +6,11 @@ const Photo = styled.img`
     height: 430px;
     object-fit: cover;
     margin-right: 15px;
+    
+    @media screen and (max-width: 860px) {
+        order: 2;
+    }
+    
 
     @media ${props => props.theme.media.mobile}{
         width: 260px;
@@ -21,10 +26,19 @@ const TextContainer = styled.div`
     min-width: 350px; 
     max-width: 500px;
     flex: 1;
+
+    @media screen and (max-width: 860px) {
+        min-width: 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        order: 1; 
+    }
     
     @media ${props => props.theme.media.tablet} {
         min-width: 100%;
-        text-align: center;
+        text-align: left;
         margin-bottom: 50px;
     }
     
@@ -79,6 +93,11 @@ const SmallText = styled.h2`
 const PhotoWrapper = styled.div`
 position: relative;
     z-index: 0;
+    
+    @media screen and (max-width: 860px) {
+        order: 2; 
+        margin-top: 20px;
+    }
     &::before {
         content: "";
         width: 330px;

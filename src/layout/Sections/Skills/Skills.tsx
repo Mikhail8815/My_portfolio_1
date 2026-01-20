@@ -9,15 +9,38 @@ import { useTranslation } from "react-i18next";
 
 const skillData = [
   {
-    iconId: "codeSvg",
-    title: "HTML5",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
     iconId: "react",
     title: "React",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "ts",
+    title: "TypeScript",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "js",
+    title: "JavaScript",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "redux",
+    title: "Redux",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+
+
+  {
+    iconId: "codeSvg",
+    title: "HTML5",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
@@ -30,29 +53,23 @@ const skillData = [
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
-    iconId: "ts",
-    title: "TypeScript",
+    iconId: "sass",
+    title: "Sass",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
+  {
+    iconId: "styledComponents",
+    title: "Styled Comp.",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+
   {
     iconId: "webDisigne",
-    title: "Web Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
-    iconId: "redux",
-    title: "Redux",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
-    iconId: "radix",
-    title: "Radix UI",
+    title: "Figma",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
@@ -63,6 +80,13 @@ const skillData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "radix",
+    title: "Radix UI",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
     iconId: "nextjs",
@@ -86,40 +110,20 @@ const skillData = [
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
+    iconId: "github",
+    title: "GitHub",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+        "tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
     iconId: "swagger",
     title: "Swagger",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
       "tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
-  {
-    iconId: "js",
-    title: "JavaScript",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
-    iconId: "github",
-    title: "GitHub",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
-    iconId: "sass",
-    title: "Sass",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
-  {
-    iconId: "styledComponents",
-    title: "Styled Comp.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-      "tempor incididunt ut labore et dolore magna aliqua Ut enim",
-  },
+
 ];
 
 export const Skills = () => {
