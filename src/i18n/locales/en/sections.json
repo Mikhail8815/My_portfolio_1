@@ -22,7 +22,9 @@
   },
   "skills": {
     "title": "My Skills", 
-    "description": "Technologies I use in my work"
+    "description": "Technologies I use in my work",
+    "showMore": "Show all skills",
+    "showLess": "Show less"
   },
   "works": {
     "title": "My Works",
