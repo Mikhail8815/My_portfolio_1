@@ -3,9 +3,10 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Link} from "../../../components/Link";
 
 const Works = styled.section`
-  ${FlexWrapper} {
-      gap: 30px;
-  }
+    ${FlexWrapper} {
+        gap: 30px;
+        justify-content: center;
+    }
     position: relative;
 `
 const Work = styled.div`
