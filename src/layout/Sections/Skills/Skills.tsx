@@ -42,7 +42,7 @@ const skillData = [
   { iconId: "sass", title: "Sass", isEssential: false },
   { iconId: "nextjs", title: "Next JS", isEssential: false },
   { iconId: "storybook", title: "Storybook", isEssential: false },
-  { iconId: "webDisigne", title: "Web Design", isEssential: false },
+  { iconId: "webDisigne", title: "Figma", isEssential: false },
   { iconId: "material-ui", title: "Material UI", isEssential: false },
   { iconId: "radix", title: "Radix UI", isEssential: false },
   { iconId: "git", title: "Git", isEssential: false },
