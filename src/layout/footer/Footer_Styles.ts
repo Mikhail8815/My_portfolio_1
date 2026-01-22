@@ -8,11 +8,6 @@ const Footer = styled.footer`
     position: relative;
     transition: ${props => props.theme.animations.transition};
 `
-const Name = styled.span`
-    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
-    letter-spacing: 3px;
-    color: ${props => props.theme.colors.font};
-`
 
 const ContactInfo = styled.div`
   display: flex;
@@ -81,7 +76,6 @@ const Copyright = styled.small`
 `
 export const S = {
     Footer,
-    Name,
     ContactInfo,
     SocialList,
     SocialItem,

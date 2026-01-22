@@ -38,7 +38,6 @@ export const Footer: React.FC = () => {
   return (
     <S.Footer>
       <FlexWrapper direction={"column"} align={"center"}>
-        <S.Name>Mikhail</S.Name>
         <S.ContactInfo>
           <a href="mailto:gorlenko.mikhail@gmail.com">
             <Icon iconId="email" width="16" height="16" />
