@@ -55,16 +55,7 @@ const worksData = [
     id: 3,
     demoLink: "https://vopp.me",
     codeLink: "https://github.com/incubator-social/vopp.me"
-  },
-  {
-    titleKey: "sections:works.projects.social-network.title",
-    descriptionKey: "sections:works.projects.social-network.description",
-    src: socialImg,
-    type: "nextjs",
-    id: 3,
-    demoLink: "https://vopp.me",
-    codeLink: "https://github.com/incubator-social/vopp.me"
-  },
+  }
 ];
 
 export const Works: React.FC = () => {

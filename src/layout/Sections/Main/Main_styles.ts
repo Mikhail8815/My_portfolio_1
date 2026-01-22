@@ -59,13 +59,11 @@ const Name = styled.h2`
     letter-spacing: 0.05em;
     margin: 10px 0;
     color: ${props => props.theme.colors.font};
-    white-space: nowrap;
-    
     
     span {
         position: relative;
         z-index: 0;
-        white-space: nowrap;
+        display: inline-block;
         &::before {
             content: "";
             display: inline-block;
@@ -80,7 +78,6 @@ const Name = styled.h2`
     
     @media ${props => props.theme.media.mobile} {
         margin: 15px 0 22px;
-        white-space: normal;
     }
 `
 

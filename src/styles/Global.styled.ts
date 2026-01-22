@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+        * {
+                outline: 1px solid rgba(255, 0, 0, 0.1);
+        }
     *,
     *::before,
     *::after {
