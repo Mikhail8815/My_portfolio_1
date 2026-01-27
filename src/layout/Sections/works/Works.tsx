@@ -53,8 +53,8 @@ const worksData = [
     src: socialImg,
     type: "nextjs",
     id: 3,
-    demoLink: "https://vopp.me",
-    codeLink: "https://github.com/incubator-social/vopp.me"
+    demoLink: "https://github.com/Mikhail8815/vopp.me",
+    codeLink: "https://github.com/Mikhail8815/vopp.me"
   }
 ];
 

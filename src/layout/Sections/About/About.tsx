@@ -5,7 +5,7 @@ import { S } from "./About_styles";
 import {useTranslation} from "react-i18next";
 import { DownloadCVButton } from "../../../components/DownloadCVButton/DownloadCVButton";
 import { ContactButton } from "../../../components/ContactButton/ContactButton";
-import aboutPhoto from "../../../assets/images/photo.webp";
+import aboutPhoto from "../../../assets/images/photo_about.webp";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Link } from "react-scroll";
 import styled from "styled-components";
