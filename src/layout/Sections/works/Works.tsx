@@ -90,7 +90,7 @@ export const Works: React.FC = () => {
           wrap={"wrap"}
         >
           <AnimatePresence>
-            {filteredWorks.map((work, index) => {
+            {filteredWorks.map((work) => {
               return (
                 <motion.div
                   style={{ width: "400px", flexGrow: 1, maxWidth: "540px" }}

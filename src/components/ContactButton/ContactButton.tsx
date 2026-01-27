@@ -42,7 +42,7 @@ const Icon = styled.span`
 `;
 
 export const ContactButton: React.FC = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     const buttonText = i18n.language === "ru" ? "Напишите мне" : "Contact Me";
 

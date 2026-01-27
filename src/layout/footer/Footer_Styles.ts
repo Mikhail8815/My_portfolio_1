@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import {font} from "../../styles/Common";
-
 
 const Footer = styled.footer`
     background-color: ${props => props.theme.colors.primaryBg};
