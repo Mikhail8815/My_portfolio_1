@@ -35,8 +35,8 @@ const worksData = [
     src: todoImg,
     type: "react",
     id: 1,
-    demoLink: "https://mikhail8815.github.io/Todolist-with-RTK_sprint_5",
-    codeLink: "https://github.com/Mikhail8815/Todolist-with-RTK_sprint_5"
+    demoLink: "https://mikhail8815.github.io/Todolist",
+    codeLink: "https://github.com/Mikhail8815/Todolist"
   },
   {
     titleKey: "sections:works.projects.ecommerce.title",
