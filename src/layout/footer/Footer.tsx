@@ -22,7 +22,7 @@ const socialItemsData = [
   },
   {
     iconId: "linkedin",
-    href: "https://www.linkedin.com/in/%D0%BC%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%B3%D0%BE%D1%80%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-73569b35a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    href: "https://www.linkedin.com/in/mihail-gorlenko-3039093b0/",
     ariaLabel: "LinkedIn",
   },
   {
